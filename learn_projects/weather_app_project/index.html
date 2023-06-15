@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://icon-library.com/images/weather-forecast-icon/weather-forecast-icon-18.jpg">
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather Projects</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="weather-header">
+        <form class="weather-search" action="">
+          <input class="weather-search-form" type="text" placeholder="Search for a city...">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </form>
+  
+        <div class="weather-units">
+          <span class="weather-unit-celsius">&#176C</span>
+          <span class="weather-unit-celsius">&#176F</span>
+        </div>
+      </header>
+      <main>
+        <section class="weather-body">
+          <div class="loc-time">
+            <h1 class="heading-primary">London, United Kingdom</h1>
+            <p class="loc-time-description">Sunday March 12, 2023 at 10:30 PM</p>
+          </div>
+  
+          <button class="btn btn--clouds">Clouds</button>
+  
+          <div class="weather-forecast-img">
+            <img src="http://openweathermap.org/img/wn/10d@4x.png" alt="weather forecast image">
+          </div>
+  
+          <div class="weather-temp">
+            <p class="temp-number">85&#176</p>
+            <div class="min-max">
+              <p class="min">Min: 82&#176</p>
+              <p class="max">Max: 82&#176</p>
+            </div>
+          </div>
+        </section>
+          <div class="grid">
+            <div class="grid-items">
+              <i class="fa-solid fa-temperature-three-quarters"></i>
+              <div class="grid-text">
+                <p class="real">Real Feel</p>
+                <p class="temp-deg real-temp-deg">85&#176</p>
+              </div>
+            </div>
+            <div class="grid-items">
+              <i class="fa-solid fa-droplet"></i>
+              <div class="grid-text">
+                <p class="real">Humidity</p>
+                <p class="temp-deg humidity-temp-deg">48&#176</p>
+              </div>
+            </div>
+            <div class="grid-items">
+              <i class="fa-solid fa-wind"></i>
+              <div class="grid-text">
+                <p class="real">Wind</p>
+                <p class="temp-deg wind-temp-deg">14.97 mph</p>
+              </div>
+            </div>
+            <div class="grid-items">
+              <i class="fa-solid fa-gauge-high"></i>
+              <div class="grid-text">
+                <p class="real">Pressure</p>
+                <p class="temp-deg pressure-temp-deg">1012 hPa</p>
+              </div>
+            </div>
+          </div>
+      </main>
+    </div>
+    <script src="https://kit.fontawesome.com/a692e1c39f.js" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
+  </body>
+</html>
